@@ -1,0 +1,91 @@
+/*1ra pagina*/ 
+/*estilo solo para pagina principal*/
+/*pura letra*/
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00aaff;
+}
+header h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #cccccc;
+    text-shadow: 0 0 8px #bb00ff;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    color: #00ffff;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00aaff;
+}
+
+/*iconos*/
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 10px;
+}
+.redes img {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    transition:filter 0.3s;
+}
+.redes img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 6px #bb00ff);
+}
+
+/*video de fondo*/
+#videofondo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+/*lo que va encima del video*/
+.contenido {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color:white
+}
+header h1 {
+  transition: color 0.4s, text-shadow 0.4s, transform 0.3s;
+}
+
+header h1:hover {
+  color: #00ffff; 
+  text-shadow: 0 0 12px #bb00ff, 0 0 20px #00ffff;
+  transform: scale(1.08); 
+}
