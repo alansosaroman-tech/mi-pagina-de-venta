@@ -147,3 +147,20 @@ header h1:hover {
   text-shadow: 0 0 12px #bb00ff, 0 0 20px #00ffff;
   transform: scale(1.08); /* se agranda un poco */
 }
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+  color: #00ffff;
+  border-bottom: 2px solid #bb00ff; /* rayita al pasar el mouse */
+}
+
+nav a.active {
+  border-bottom: 2px solid #00ffff; /* rayita fija en el link activo */
+  color: #00ffff;
+}
