@@ -192,3 +192,54 @@ nav a.active {
   border-bottom: 2px solid #00ffff; /* rayita fija en el link activo */
   color: #00ffff;
 }
+/* Información de contacto */
+section.info-contacto {
+  background-color: #1e1e2f; /* Fondo gamer oscuro */
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.3); /* Glow neón */
+}
+
+section.info-contacto h2 {
+  color: #00ffff; /* Neón celeste */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Mapa */
+section.mapa-contacto {
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255,0,255,0.3); /* Glow púrpura gamer */
+}
+
+section.mapa-contacto h2 {
+  color: #ff00ff; /* Neón púrpura */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+section.mapa-contacto iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+.info-contacto table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-contacto th,
+.info-contacto td {
+  border: 1px solid #334960;
+  padding: 10px;
+  text-align: left;
+}
+
+.info-contacto th {
+  background-color: #2a2a3d;
+  color: #00ffff; /* Neón celeste */
+}
