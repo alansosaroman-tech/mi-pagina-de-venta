@@ -1,0 +1,235 @@
+body.promociones {
+  margin: 0;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+/* Cabecera fija en Promociones */
+body.promociones header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #000;
+  box-shadow: 0 0 10px #00ffff;
+  z-index: 1000;
+  padding: 25px 0;
+}
+
+body.promociones header h1 {
+  text-align: center;
+  color: #000;
+  text-shadow: 0 0 8px #00ffff, 0 0 12px #bb00ff;
+  margin: 0 0 25px;
+  transition: color 0.4s, text-shadow 0.4s, transform 0.3s;
+}
+
+body.promociones header h1:hover {
+  color: #00ffff;
+  text-shadow: 0 0 12px #bb00ff, 0 0 20px #00ffff;
+  transform: scale(1.08);
+}
+
+body.promociones nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+body.promociones nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, border-bottom 0.3s, text-shadow 0.3s;
+}
+
+body.promociones nav a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 8px #bb00ff;
+  border-bottom: 2px solid #bb00ff;
+}
+
+body.promociones nav a.active {
+  border-bottom: 2px solid #00ffff;
+  color: #00ffff;
+}
+
+body.promociones main {
+  margin-top: 180px;
+}
+
+/* Intro */
+.intro-promos {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.intro-promos h2 {
+  color: #0077cc;
+  font-size: 1.8em;
+}
+
+.intro-promos p {
+  color: #555;
+  font-size: 1.05em;
+}
+
+/* Caja animada del cupón */
+.cupon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.cupon-caja {
+  background: #0a0a0a;
+  border: 2px solid #00ffff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  box-shadow: 0 0 15px #bb00ff, 0 0 25px rgba(0, 255, 255, 0.4);
+  animation: cuponPulso 2.5s ease-in-out infinite;
+}
+
+@keyframes cuponPulso {
+  0%, 100% {
+    box-shadow: 0 0 15px #bb00ff, 0 0 25px rgba(0, 255, 255, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px #00ffff, 0 0 40px rgba(187, 0, 255, 0.6);
+    transform: scale(1.02);
+  }
+}
+
+.cupon-icono {
+  font-size: 3em;
+  margin-bottom: 10px;
+  animation: rebote 1.8s ease-in-out infinite;
+}
+
+@keyframes rebote {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.cupon-caja h3 {
+  color: #00ffff;
+  text-shadow: 0 0 8px #bb00ff;
+  font-size: 1.6em;
+  margin: 10px 0;
+}
+
+.cupon-caja p {
+  color: #e0e0e0;
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+.btn-cupon {
+  background: linear-gradient(90deg, #00ffff, #bb00ff);
+  border: none;
+  border-radius: 8px;
+  padding: 14px 30px;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-cupon:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #00ffff, 0 0 25px #bb00ff;
+}
+
+/* Otras promociones */
+.otras-promos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.otras-promos h2 {
+  color: #0077cc;
+  margin-bottom: 25px;
+}
+
+.promos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.promo-card {
+  background: #fff;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 12px #bb00ff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.promo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 119, 204, 0.5);
+}
+
+.promo-card h3 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.promo-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.promo-tag {
+  color: #bb00ff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Footer en Promociones */
+body.promociones footer {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+body.promociones footer h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+body.promociones .redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+body.promociones .redes img {
+  filter: brightness(0) saturate(100%);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+body.promociones .redes img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px #00ffff)
+          drop-shadow(0 0 12px #bb00ff);
+}

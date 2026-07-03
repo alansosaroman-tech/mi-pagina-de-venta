@@ -37,6 +37,7 @@ nav ul {
   gap: 30px;
   padding: 0;
   margin: 20px 0 40px;
+  flex-wrap: wrap;
 }
 
 nav a {
